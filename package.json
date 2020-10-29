@@ -1,0 +1,33 @@
+{
+  "name": "bellman-ford-js",
+  "version": "1.0.0",
+  "description": "bellman ford graph algorithm in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navarrojandg/bellman-ford-js.git"
+  },
+  "keywords": [
+    "bellman",
+    "ford",
+    "graph",
+    "algorithm",
+    "negative",
+    "edge",
+    "weight",
+    "cycle"
+  ],
+  "author": "jan derrick navarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navarrojandg/bellman-ford-js/issues"
+  },
+  "homepage": "https://github.com/navarrojandg/bellman-ford-js#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "jest": "^26.6.1"
+  }
+}
