@@ -11,6 +11,7 @@ module.exports = {
     'ecmaVersion': 12,
   },
   'rules': {
-    'max-len': ['error', {'code': 100}]
+    'max-len': ['error', {'code': 100}],
+    'require-jsdoc': 0,
   },
 };
