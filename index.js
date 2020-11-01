@@ -17,5 +17,11 @@ const s = G.getVertex(`v_0`);
 
 console.log(BellmanFord(G, s));
 for (const v of G.vertexIterable) {
-  console.log(v.id, v.d);
+  let path = `${v.id} d: ${v.d}`;
+  let parent = v.parent;
+  while (parent != null) {
+    path = `${parent.id} -> ` + path;
+    parent = parent.parent;
+  };
+  console.log(path);
 };
