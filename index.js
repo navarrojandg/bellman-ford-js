@@ -2,32 +2,17 @@
 const BellmanFord = require('./lib/bellmanFord/index');
 const Graph = require('./lib/graph/index');
 
-// const array = [
-//   // s , t  ,  x  ,  y   , z
-//   [null, 6, null, 7, null], // s
-//   [null, null, 5, 8, -4], // t
-//   [null, -2, null, null, null], // x
-//   [null, null, -3, null, 9], // y
-//   [2, null, 7, null, null], // z
-// ]; // returns true
-
-// const array = [
-//   //  1,   2,     3,    4,    5
-//   [null, 3, -8, null, -4], // 1
-//   [null, null, null, 1, 7], // 2
-//   [null, 4, null, null, 3], // 3
-//   [2, null, -5, null, null], // 4
-//   [null, null, null, 6, null], // 5
-// ]; // returns false
-
 const array = [
-  //  1,   2,     3,    4,    5
-  [null, 3, -6, null, -4], // 1
-  [null, null, null, 1, 7], // 2
-  [null, 4, null, null, 3], // 3
-  [2, null, -5, null, null], // 4
-  [null, null, null, 6, null], // 5
-]; // returns true
+  //  1,    2,    3,    4,    5,    6,    7,    8
+  [null, null, null, null, null, null, -2, 3], // 1
+  [5, null, 2, null, 1, 1, null, null], // 2
+  [null, null, null, null, null, -1, null, null], // 3
+  [null, null, 4, null, null, null, -1, null], // 4
+  [4, null, null, null, null, null, null, 3], // 5
+  [5, null, null, -2, 0, null, null, null], // 6
+  [10, 2, 4, null, null, 3, null, 5], // 7
+  [1, 0, 1, 2, null, 0, null, null], // 8
+];
 
 const G = new Graph();
 G.fromArray(array);
